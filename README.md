@@ -48,5 +48,26 @@ The detail View contains
 - Author
 ```
 
+## Design
+A master- detail view which i was instructed is a design concept whereby a list of items(referred to as the master list) is displayed to the user. On selecting 
+an item from the list, additional information related to the item is then presented to the user within the detail pane.
+On tablet sized Android device displays in landscape orientation, the master list appears in a narrow vertical panel along the left-hand edge of the screen. The remainder of the display is devoted to the detail pane in an arrangement referred to as two-pane mode.
 
+
+On smaller, phone sized Android devices, the master list takes up the entire screen and the detail pane appears on a separate screen which appears when a selection is made from the master list. 
+
+- Here I leveraged on Sliding pane layout to achieve this.
+- Constraint layouts were used to prevent nested views and ensure layouts rendered in less than 60 frames per second which prevents UI jank
+- Layouts were also created to support landscape mode incase of device rotation
+
+
+The Master/Detail Flow
+
+On tablet sized Android device displays in landscape orientation, the master list appears in a narrow vertical panel along the left-hand edge of the screen. The remainder of the display is devoted to the detail pane in an arrangement referred to as two-pane mode﻿. Figure 51-1, for example, shows the master/detail, two-pane arrangement with master items listed and the content of item one displayed in the detail pane:
+
+
+As3.0 master detail tablet.png
+
+
+On smaller, phone sized Android devices, the master list takes up the entire screen and the detail pane appears on a separate screen which appears when a selection is made from the master list. In this mode, the detail screen includes an action bar entry to return to the master list. Figure 51-2 for example, illustrates both the master and detail screens for the same item list on a 4” phone screen:
 
