@@ -79,8 +79,36 @@ The remote later relies on Retrofit library to fetch data from the API.  The rem
 #### Repository
 My repository was used to expose data to the rest of the application and also reolving conflicts. Helped in Abstracting sources of data from the rest of the app.
 
-As3.0 master detail tablet.png
+
+### Presentation
+The UI/Presentation layer is the pipeline that converts application data-changes to a form that the UI can present and then displays it. I used a  pattern where state of the application flows down and events flow up called `Unidirectional data flow`. Here the view model holds and exposes the state in an observable data holder called `Stateflow`. This ensures quick retoration of state after configuration changes. Alos the UI can react to any changes made in the state without having to manually pull data directly from the ViewModel.
+
+The UI notifies the ViewModel of user events and data requests.
+The ViewModel handles the actions and updates the state.
+The updated state is fed back to the UI to render.
+The above is repeated for any event that causes a mutation of state.
 
 
-On smaller, phone sized Android devices, the master list takes up the entire screen and the detail pane appears on a separate screen which appears when a selection is made from the master list. In this mode, the detail screen includes an action bar entry to return to the master list. Figure 51-2 for example, illustrates both the master and detail screens for the same item list on a 4” phone screen:
+## Testing
+Testing is done with Junit4 testing framework for assertions and Mockito for mocking classes. Each  layer has its own test. 
+Viewmodel tests verify that each call to repository produces the correct view state.
+Repository Test verify each interaction with server returns the expected result.
 
+
+## Improvement
+-  I feel Paging Library should be used for pagination to allow the app use both network bandwidth and system resources more efficiently
+-  I also will be grateful to hear your feedback/criticism so I can improve and make different decisions next time.
+
+
+## - Built With 🛠
+- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
+  - [StateFlows](https://developer.android.com/kotlin/flow) -  Flow APIs that enable flows to optimally emit state updates and emit values to multiple consumers.
+  - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
+  - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes. 
+  - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
+- [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
+- [OkHttp](http://square.github.io/okhttp/) - HTTP client that's efficient by default: HTTP/2 support allows all requests to the same host to share a socket
+- [Glide](https://github.com/bumptech/glide) - image loading framework for Android
+- [Gson](https://github.com/google/gson) - used to convert Java Objects into their JSON representation and vice versa.
+- [Mockito](http://site.mockito.org/) - Most popular mocking framework for Java/kotlin.
