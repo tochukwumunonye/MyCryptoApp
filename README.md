@@ -49,10 +49,9 @@ The detail View contains
 ```
 
 ## Design
-A master- detail view which i was instructed is a design concept whereby a list of items(referred to as the master list) is displayed to the user. On selecting 
+A master- detail view which i was instructed, is a design concept whereby a list of items(referred to as the master list) is displayed to the user. On selecting 
 an item from the list, additional information related to the item is then presented to the user within the detail pane.
 On tablet sized Android device displays in landscape orientation, the master list appears in a narrow vertical panel along the left-hand edge of the screen. The remainder of the display is devoted to the detail pane in an arrangement referred to as two-pane mode.
-
 
 On smaller, phone sized Android devices, the master list takes up the entire screen and the detail pane appears on a separate screen which appears when a selection is made from the master list. 
 
@@ -61,9 +60,21 @@ On smaller, phone sized Android devices, the master list takes up the entire scr
 - Layouts were also created to support landscape mode incase of device rotation
 
 
-The Master/Detail Flow
+## Architecture
 
-On tablet sized Android device displays in landscape orientation, the master list appears in a narrow vertical panel along the left-hand edge of the screen. The remainder of the display is devoted to the detail pane in an arrangement referred to as two-pane mode﻿. Figure 51-1, for example, shows the master/detail, two-pane arrangement with master items listed and the content of item one displayed in the detail pane:
+The application follows clean architecture because of the benefits it brings to software which includes scalability, maintainability and testability.
+It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different layers namely:
+
+- Data Layer
+- Presentation
+
+
+### Data Layer
+The data layer contains application data and business logic. The business logic is what gives value to your app—it's made of real-world business rules that determine how application data must be created, stored, and changed.
+
+#### Remote layer
+The remote later relies on Retrofit library to fetch data from the API.  The remote layer contains its own data class called ArticleResult which maps to another data class (Article) within domain layer. 
+
 
 
 As3.0 master detail tablet.png
