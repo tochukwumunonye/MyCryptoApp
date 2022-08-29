@@ -96,6 +96,7 @@ Repository Test verify each interaction with server returns the expected result.
 
 
 ## Improvement
+- App should be made to operate offline first because network availability is not always guaranteed
 -  I feel Paging Library should be used for pagination to allow the app use both network bandwidth and system resources more efficiently
 -  I also will be grateful to hear your feedback/criticism so I can improve and make different decisions next time.
 
@@ -104,9 +105,8 @@ Repository Test verify each interaction with server returns the expected result.
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
   - [StateFlows](https://developer.android.com/kotlin/flow) -  Flow APIs that enable flows to optimally emit state updates and emit values to multiple consumers.
-  - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
-  - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes. 
-  - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
+  - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
+  - [LiveData] -Lifecycle aware data holder 
 - [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
 - [OkHttp](http://square.github.io/okhttp/) - HTTP client that's efficient by default: HTTP/2 support allows all requests to the same host to share a socket
 - [Glide](https://github.com/bumptech/glide) - image loading framework for Android
