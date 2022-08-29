@@ -33,13 +33,17 @@ Thanks so much for checking out my project.
 App should show a list of New York Time stories in ` Master View and Detail View`. The master view contains a list of articles and the details of each story will be represented in detail view.
 
 ```
-The list View contains small image
-Then a list of favorite collections is presented
+The list View contains
+-  Small image
+-  Title
+-  Author
 ```
 
 ```
-In the recipe collection card
-When the user taps the favorite button in the favorite list
+The detail View contains 
+- Large Image
+- Title
+- See more Button to preview article in web view
 Then the recipe collection is be removed from the favorite list
 ```
 
