@@ -44,7 +44,8 @@ The detail View contains
 - Large Image
 - Title
 - See more Button to preview article in web view
-Then the recipe collection is be removed from the favorite list
+- Description
+- Author
 ```
 
 
