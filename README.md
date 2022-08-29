@@ -55,8 +55,11 @@ On tablet sized Android device displays in landscape orientation, the master lis
 
 On smaller, phone sized Android devices, the master list takes up the entire screen and the detail pane appears on a separate screen which appears when a selection is made from the master list. 
 
-- Here I leveraged on Sliding pane layout to achieve this.
-- Constraint layouts were used to prevent nested views and ensure layouts rendered in less than 60 frames per second which prevents UI jank
+- Here I leveraged on Sliding pane layout to achieve this. I designed according to the recommended window size class
+
+![expanded](https://user-images.githubusercontent.com/61085272/187313496-7f8acd25-271c-49ab-8076-933160373ff7.png)
+
+- Constraint layouts were also used to prevent nested views and ensure layouts rendered in less than 60 frames per second which prevents UI jank
 - Layouts were also created to support landscape mode incase of device rotation
 
 
@@ -66,7 +69,7 @@ The application follows clean architecture because of the benefits it brings to 
 It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different layers namely:
 
 - Data Layer
-- -Domain Layer
+- Domain Layer
 - Presentation Layer
 
 
