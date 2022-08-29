@@ -66,7 +66,8 @@ The application follows clean architecture because of the benefits it brings to 
 It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different layers namely:
 
 - Data Layer
-- Presentation
+- -Domain Layer
+- Presentation Layer
 
 
 ### Data Layer
@@ -75,7 +76,8 @@ The data layer contains application data and business logic. The business logic 
 #### Remote layer
 The remote later relies on Retrofit library to fetch data from the API.  The remote layer contains its own data class called ArticleResult which maps to another data class (Article) within domain layer. 
 
-
+#### Repository
+My repository was used to expose data to the rest of the application and also reolving conflicts. Helped in Abstracting sources of data from the rest of the app.
 
 As3.0 master detail tablet.png
 
