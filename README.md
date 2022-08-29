@@ -27,7 +27,7 @@ Thanks so much for checking out my project.
 <img src="https://user-images.githubusercontent.com/61085272/187267880-4f43e35a-a025-4870-b335-15086f09db21.png" width="33%" /> <img src="https://user-images.githubusercontent.com/61085272/187267650-40d489a9-9b43-4aca-924a-cf26dbcf5b89.png" width="33%" /> <img src="https://user-images.githubusercontent.com/61085272/187292563-db37bb86-616f-4c97-a95c-463b8d9a3782.jpg" width="33%" /> 
 
 #### LandScape Orientation
-<img src="https://user-images.githubusercontent.com/61085272/187267378-2c134d7f-f484-4887-b372-ae97cfa5de32.png" width="33%" /> <img src="https://user-images.githubusercontent.com/61085272/187270133-46c951f2-08ab-4995-81dd-6efecf780b92.png" width="33%" /> <img src="" width="33%" /> 
+<img src="https://user-images.githubusercontent.com/61085272/187267378-2c134d7f-f484-4887-b372-ae97cfa5de32.png" width="33%" /> <img src="https://user-images.githubusercontent.com/61085272/187270133-46c951f2-08ab-4995-81dd-6efecf780b92.png" width="33%" /> <img src="https://user-images.githubusercontent.com/61085272/187294121-e134aef1-1204-4265-92b3-e54cb0f30288.jpg" width="33%" /> 
 
 ## Feature
 App should show a list of New York Time stories in ` Master View and Detail View`. The master view contains a list of articles and the details of each story will be represented in detail view.
